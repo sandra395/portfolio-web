@@ -110,3 +110,6 @@ temp/
 .CFUserTextEncoding
 .lesshst
 .env.local
+
+# File to ignore
+file-to-keep/
