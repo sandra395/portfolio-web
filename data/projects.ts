@@ -55,10 +55,8 @@ export const PROJECTS: Project[] = [
       apiStateManagement: ["Axios", "Dictionary API", "React Hooks (useState, useEffect)"],
     },
     
-    featured: true,  // ←true = show on homepage, false = hide
-  },
-  
-
+    featured: true  // true = show on homepage, false = hide
+  }
 ];
 
 
