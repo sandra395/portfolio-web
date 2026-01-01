@@ -59,6 +59,11 @@ export const PROJECTS: Project[] = [
   },
   
 
+];
+
+/**
+ * Get featured projects for homepage display
+ */
 export const getFeaturedProjects = (): Project[] => {
   return PROJECTS.filter(project => project.featured);
 };
