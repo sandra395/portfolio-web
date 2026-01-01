@@ -29,7 +29,8 @@ export const EXPERIENCES: Experience[] = [
     skills: ["React", "Git", "TypeScript", "MUI"], // TECHNOLOGIES YOU USED
 
     type: "volunteer", // "work", "volunteer"
-  },
+  }
+];
 
 export const getExperiencesByType = (
   type: Experience["type"]
