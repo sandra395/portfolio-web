@@ -1,17 +1,9 @@
 /**
  * 📧 CONTACT SECTION - SIMPLIFIED VERSION
- * 
- * This shows your contact information and social media buttons.
- * 
- * ✏️ TO EDIT YOUR CONTACT INFO:
- * Go to: data/contact-links.ts
- * 
- * 🎨 TO CHANGE COLORS:
- * Find "blue" or "purple" below and change to: green, red, pink, indigo, etc.
- * 
- * 📏 TO CHANGE SIZES:
- * Find "text-4xl" (extra large) and change to: text-2xl, text-3xl, text-5xl
+ *
+ * Shows your contact information and social media buttons.
  */
+
 
 // Import the button component (pre-made button style)
 import { Button } from "@/components/ui/button";
@@ -143,7 +135,7 @@ function ContactButtons() {
         ))}
       </div>
       
-      {/* DECORATIVE DOTS (optional - you can delete this if you want) */}
+      {/* DECORATIVE DOTS */}
       <div className="flex justify-center pt-6">
         <div className="flex space-x-2">
           {/* Three animated dots */}
