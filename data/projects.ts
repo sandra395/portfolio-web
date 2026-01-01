@@ -61,6 +61,7 @@ export const PROJECTS: Project[] = [
 
 ];
 
+
 /**
  * Get featured projects for homepage display
  */
