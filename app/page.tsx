@@ -1,17 +1,3 @@
-/**
- * Portfolio Homepage
- * 
- * This is the main page of the portfolio, now refactored into modular components.
- * Each section is now a separate, reusable component with its own responsibilities.
- * 
- * Benefits of this refactored approach:
- * - Easy to maintain and update individual sections
- * - Consistent styling and spacing across all sections
- * - Reusable components that can be used elsewhere
- * - Clear separation of concerns
- * - Type-safe data management
- * - Junior developer friendly structure
- */
 
 "use client";
 
