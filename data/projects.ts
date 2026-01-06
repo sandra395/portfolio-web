@@ -1,5 +1,5 @@
 /**
- * 🚀 PROJECTS
+ * 🚀 PROJECTS DATA
  */
 
 import { Project } from '@/types/portfolio';
