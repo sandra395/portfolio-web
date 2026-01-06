@@ -13,7 +13,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   // JOB TITLE (shown under the name)
   title: "Junior Frontend Developer", 
   
-  // ← BIO / ABOUT ME (shown in About section)
+  // BIO / ABOUT ME (shown in About section)
 
   bio: `I'm a frontend developer who combines technical skills with experience in education and design. I completed a JavaScript Software Development Bootcamp at Northcoders, where I built a full-stack property booking platform like Airbnb using React, Node.js, and PostgreSQL. I've also enhanced my skills through courses with Code First Girls and continue building projects independently.
 
