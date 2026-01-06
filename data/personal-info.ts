@@ -11,7 +11,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   name: "Sandra Barbosa",
   
   // JOB TITLE (shown under the name)
-  title: "Junior Frontend Developer",
+  title: "Junior Frontend Developer", 
   
   // ← BIO / ABOUT ME (shown in About section)
 
