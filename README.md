@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my journey as a Junior Fronten
 
 ## 🚀 Live Demo
 
-[View Portfolio](your-deployed-url-here)
+[View Portfolio](https://sandrabarbosa-portfolio.vercel.app/)
 
 ## 🎯 What You'll Find
 
@@ -32,7 +32,7 @@ A modern, responsive portfolio website showcasing my journey as a Junior Fronten
 ## 🚀 Quick Start
 
 # Clone the repository
-git clone https://github.com/yourusername/portfolio-web.git
+git clone https://github.com/sandra395/portfolio-web
 
 # Install dependencies
 npm install
