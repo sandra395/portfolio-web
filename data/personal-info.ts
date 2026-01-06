@@ -15,7 +15,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   
   // ← BIO / ABOUT ME (shown in About section)
 
-  bio: `I'm a frontend developer who combines technical skills with a background in education and design. I completed a JavaScript Software Development Bootcamp at Northcoders, where I built a full-stack property booking platform like Airbnb using React, Node.js, and PostgreSQL. I've also enhanced my skills through courses with Code First Girls and continue building projects independently.
+  bio: `I'm a frontend developer who combines technical skills with experience in education and design. I completed a JavaScript Software Development Bootcamp at Northcoders, where I built a full-stack property booking platform like Airbnb using React, Node.js, and PostgreSQL. I've also enhanced my skills through courses with Code First Girls and continue building projects independently.
 
 My teaching experience has equipped me with strong problem-solving and communication skills that I now apply to writing clean, efficient code and collaborating effectively with development teams. I'm currently volunteering with a Women in Coding community, helping others while continuing to expand my own technical expertise.
 
