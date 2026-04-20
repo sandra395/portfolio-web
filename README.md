@@ -25,18 +25,13 @@ A modern, responsive portfolio website showcasing my journey as a Junior Fronten
 
 - **Fully Responsive** - Optimized for mobile, tablet, and desktop
 - **Performance Focused** - Fast loading with Next.js optimization
-- **Accessible Design** - WCAG compliant with proper ARIA labels
+- **Accessible Design** - Accessibility-minded 
 - **Modern UI/UX** - Clean, professional interface
-- **SEO Optimized** - Proper metadata and semantic HTML
 
 ## 🚀 Quick Start
 
-# Clone the repository
+```bash
 git clone https://github.com/sandra395/portfolio-web
-
-# Install dependencies
+cd portfolio-web
 npm install
-
-# Start development server
-npm run devOpen [http://localhost:3000](http://localhost:3000) to view locally.
-
+npm run dev
