@@ -1,9 +1,17 @@
 /**
  * 📧 CONTACT SECTION - SIMPLIFIED VERSION
  *
- * Shows your contact information and social media buttons.
+ * This shows your contact information and social media buttons.
+ *
+ * ✏️ TO EDIT YOUR CONTACT INFO:
+ * Go to: data/contact-links.ts
+ *
+ * 🎨 TO CHANGE COLORS:
+ * Find "blue" or "purple" below and change to: green, red, pink, indigo, etc.
+ *
+ * 📏 TO CHANGE SIZES:
+ * Find "text-4xl" (extra large) and change to: text-2xl, text-3xl, text-5xl
  */
-
 
 // Import the button component (pre-made button style)
 import { Button } from "@/components/ui/button";
@@ -20,12 +28,13 @@ export function ContactSection() {
     // bg-gradient-to-br = background gradient from top-left to bottom-right
     // from-blue-50/30 = start with light blue (30% opacity)
     // to-purple-50/30 = end with light purple (30% opacity)
-    <SectionContainer id="contact" className="bg-gradient-to-br from-blue-50/30 to-purple-50/30">
-      
+    <SectionContainer
+      id="contact"
+      className="bg-gradient-to-br from-blue-50/30 to-purple-50/30"
+    >
       {/* Center everything and limit width */}
       {/* max-w-4xl = maximum width, mx-auto = center horizontally, text-center = center text */}
       <div className="max-w-4xl mx-auto text-center">
-        
         {/* White box with rounded corners */}
         {/* bg-white/60 = white background (60% opacity) */}
         {/* rounded-3xl = very rounded corners */}
@@ -34,13 +43,11 @@ export function ContactSection() {
         {/* shadow-sm = small shadow */}
         {/* space-y-8 = vertical space between children */}
         <div className="bg-white/60 rounded-3xl p-8 md:p-12 shadow-sm space-y-8">
-          
           {/* TITLE AND DESCRIPTION */}
           <ContactHeader />
-          
+
           {/* CONTACT BUTTONS */}
           <ContactButtons />
-          
         </div>
       </div>
     </SectionContainer>
@@ -55,13 +62,11 @@ function ContactHeader() {
   return (
     // space-y-6 = vertical space between items
     <div className="space-y-6">
-      
       {/* MAIN TITLE */}
       {/* text-4xl = extra large text on mobile */}
       {/* sm:text-5xl = even larger on small screens and up */}
       {/* font-bold = bold text */}
       <h2 className="text-4xl sm:text-5xl font-bold">
-        
         {/* Gradient colored text (blue to purple) */}
         {/* bg-gradient-to-r = gradient left to right */}
         {/* from-blue-600 = start with blue */}
@@ -73,7 +78,7 @@ function ContactHeader() {
           Let's Connect!
         </span>
       </h2>
-      
+
       {/* DESCRIPTION TEXT */}
       <div className="space-y-3">
         {/* text-lg = large text on mobile */}
@@ -83,9 +88,12 @@ function ContactHeader() {
         {/* max-w-2xl = maximum width */}
         {/* mx-auto = center horizontally */}
         <p className="text-lg sm:text-xl text-slate-700 font-medium max-w-2xl mx-auto">
-          Open to job opportunities, learning and connecting with others!
+          I'm currently looking for Junior Frontend Developer opportunities in
+          the UK, particularly hybrid or remote roles. If you're looking for
+          someone with a combination of frontend development, UI/UX and
+          accessibility skills. I'd love to connect!
         </p>
-        
+
         {/* Decorative line under text */}
         {/* w-20 = width, h-1 = height */}
         {/* bg-gradient-to-r = gradient left to right */}
@@ -103,9 +111,9 @@ function ContactHeader() {
  */
 function ContactButtons() {
   // Find the email link from your data
-  const emailLink = CONTACT_LINKS.find(link => link.type === 'email');
+  const emailLink = CONTACT_LINKS.find((link) => link.type === "email");
   // Find all social media links from your data
-  const socialLinks = CONTACT_LINKS.filter(link => link.type === 'social');
+  const socialLinks = CONTACT_LINKS.filter((link) => link.type === "social");
 
   return (
     <div>
@@ -115,27 +123,26 @@ function ContactButtons() {
       {/* justify-center = center horizontally */}
       {/* gap-4 = space between buttons */}
       <div className="flex flex-wrap justify-center gap-4">
-        
         {/* EMAIL BUTTON (if you have one) */}
         {emailLink && (
-          <ContactButton 
-            link={emailLink} 
-            variant="primary"  // primary = blue/purple gradient
+          <ContactButton
+            link={emailLink}
+            variant="primary" // primary = blue/purple gradient
           />
         )}
-        
+
         {/* SOCIAL MEDIA BUTTONS */}
         {/* .map() loops through each social link and creates a button */}
         {socialLinks.map((link) => (
-          <ContactButton 
-            key={link.id}  // unique identifier for React
-            link={link} 
-            variant="secondary"  // secondary = white with border
+          <ContactButton
+            key={link.id} // unique identifier for React
+            link={link}
+            variant="secondary" // secondary = white with border
           />
         ))}
       </div>
-      
-      {/* DECORATIVE DOTS */}
+
+      {/* DECORATIVE DOTS (optional - you can delete this if you want) */}
       <div className="flex justify-center pt-6">
         <div className="flex space-x-2">
           {/* Three animated dots */}
@@ -152,35 +159,36 @@ function ContactButtons() {
  * 🔘 INDIVIDUAL BUTTON
  * Creates one contact button (email or social media)
  */
-function ContactButton({ 
-  link, 
+function ContactButton({
+  link,
   variant,
-}: { 
-  link: ContactLink; 
-  variant: 'primary' | 'secondary';  // primary = colorful, secondary = white
+}: {
+  link: ContactLink;
+  variant: "primary" | "secondary"; // primary = colorful, secondary = white
 }) {
   // Get the icon for this button (like LinkedIn icon, GitHub icon, etc.)
   const IconComponent = link.icon;
-  
+
   // Choose button style based on variant
   // Primary (email) = blue/purple gradient with white text
   // Secondary (social) = white background with border
-  const buttonClasses = variant === 'primary' 
-    ? "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl border-0"
-    : "bg-white/80 border-2 border-blue-200/50 hover:border-blue-300/50 hover:bg-white/90 text-slate-700 hover:text-slate-900 shadow-sm hover:shadow-md";
+  const buttonClasses =
+    variant === "primary"
+      ? "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl border-0"
+      : "bg-white/80 border-2 border-blue-200/50 hover:border-blue-300/50 hover:bg-white/90 text-slate-700 hover:text-slate-900 shadow-sm hover:shadow-md";
 
   return (
-    <Button 
-      size="lg"  // large button
-      variant="ghost"  // ghost variant (we override with our own classes)
+    <Button
+      size="lg" // large button
+      variant="ghost" // ghost variant (we override with our own classes)
       className={`gap-2 transition-all duration-300 hover:scale-105 ${buttonClasses}`}
-      asChild  // makes Button render as the child element (the <a> tag)
+      asChild // makes Button render as the child element (the <a> tag)
     >
       {/* Actual link */}
       <a
-        href={link.url}  // where the link goes
-        target={link.type === 'email' ? '_self' : '_blank'}  // email opens in same tab, social in new tab
-        rel={link.type === 'email' ? undefined : 'noopener noreferrer'}  // security for external links
+        href={link.url} // where the link goes
+        target={link.type === "email" ? "_self" : "_blank"} // email opens in same tab, social in new tab
+        rel={link.type === "email" ? undefined : "noopener noreferrer"} // security for external links
       >
         {/* Icon (like LinkedIn logo) */}
         <IconComponent className="w-5 h-5" />

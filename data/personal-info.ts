@@ -1,28 +1,38 @@
 /**
- * 👤 PERSONAL INFORMATION DATA
+ * 👤 PERSONAL INFORMATION - EASY TO EDIT!
+ *
+ * This is where you change your personal details.
+ * These details appear throughout your website.
+ *
+ * ✏️ WHAT TO EDIT:
+ * - name: Your full name
+ * - title: Your job title or what you do
+ * - bio: Your "About Me" story (keep it between 2-4 paragraphs)
+ * - email: Your contact email
+ * - location: Where you're based
  */
 
-
-
-import { PersonalInfo } from '@/types/portfolio';
+import { PersonalInfo } from "@/types/portfolio";
 
 export const PERSONAL_INFO: PersonalInfo = {
-  // NAME (shown in big text on homepage)
+  // ← YOUR NAME (shown in big text on homepage)
   name: "Sandra Barbosa",
-  
-  // JOB TITLE (shown under the name)
-  title: "Junior Frontend Developer", 
-  
-  // BIO / ABOUT ME (shown in About section)
 
-  bio: `I'm a frontend developer who combines technical skills with experience in education and design. I completed a JavaScript Software Development Bootcamp at Northcoders, where I built a full-stack property booking platform like Airbnb using React, Node.js, and PostgreSQL. I've also enhanced my skills through courses with Code First Girls and continue building projects independently.
+  // ← YOUR JOB TITLE (shown under your name)
+  title: "Junior Frontend Developer",
 
-My teaching experience has equipped me with strong problem-solving and communication skills that I now apply to writing clean, efficient code and collaborating effectively with development teams. I'm currently volunteering with a Women in Coding community, helping others while continuing to expand my own technical expertise.
+  // ← YOUR BIO / ABOUT ME (shown in About section)
+  // Tip: Keep this between 100-300 words
+  bio: `I'm a Junior Frontend Developer with hands-on experience building responsive web applications using JavaScript, React, TypeScript and Next.js. I enjoy turning ideas and designs into clean, accessible and user-focused digital experiences.
 
-I'm passionate about creating accessible, user-focused web applications and am seeking a Frontend or Full-Stack Developer role where I can contribute to meaningful projects while growing alongside experienced developers.`,
-  // EMAIL
+My background in Design & Digital Creation gives me a strong foundation in UI/UX, Figma, responsive design and accessibility. Alongside my development journey, I currently work as a Teaching Assistant, where I've developed strong problem-solving, collaboration, communication and adaptability skills that I bring to software development.
+
+I'm also currently volunteering as a UI Designer and Frontend Developer with Women Coding Community, contributing to website development, Figma designs and new features.
+
+I'm now looking for a Junior Frontend Developer opportunity in the UK, particularly hybrid or remote, where I can contribute to real products and continue developing as an engineer.`,
+  // ← YOUR EMAIL
   email: "sandra90barbosa@hotmail.com",
-  
-  // LOCATION
-  location: "London, UK"
+
+  // ← YOUR LOCATION
+  location: "London, UK",
 };

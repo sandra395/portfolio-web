@@ -35,7 +35,7 @@ export function Header() {
               <Avatar className="h-12 w-12 ring-3 ring-white shadow-lg group-hover:ring-blue-300/60 transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl">
                 <AvatarImage 
                   src="/images/Profile.jpg" 
-                  alt={PERSONAL_INFO.name}
+                  alt={`Portrait of ${PERSONAL_INFO.name}`}
                   className="object-cover object-center"
                 />
                 <AvatarFallback className="bg-gradient-to-br from-blue-600 to-purple-600 text-white text-lg font-semibold">

@@ -77,7 +77,7 @@ function ProjectCard({ project, animationDelay }: { project: Project; animationD
           {project.image && (
             <ProjectImage 
               src={project.image} 
-              alt={project.title}
+              alt={`Screenshot of ${project.title}`}
             />
           )}
 
