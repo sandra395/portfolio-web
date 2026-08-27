@@ -58,7 +58,7 @@ function HeroContent() {
         <p className="text-xl sm:text-2xl font-medium text-slate-700 max-w-2xl mx-auto">
           {PERSONAL_INFO.title}
         </p>
-        <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto">
           I build responsive, accessible web experiences using React,
           TypeScript, JavaScript and Next.js, combining frontend development
           with a background in UI/UX design.

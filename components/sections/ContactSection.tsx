@@ -87,11 +87,12 @@ function ContactHeader() {
         {/* font-medium = medium font weight */}
         {/* max-w-2xl = maximum width */}
         {/* mx-auto = center horizontally */}
-        <p className="text-lg sm:text-xl text-slate-700 font-medium max-w-2xl mx-auto">
+        <p className="text-lg sm:text-xl text-slate-700 font-medium max-w-4xl mx-auto px-4">
           I'm currently looking for Junior Frontend Developer opportunities in
           the UK, particularly hybrid or remote roles. If you're looking for
           someone with a combination of frontend development, UI/UX and
-          accessibility skills. I'd love to connect!
+          accessibility skills.{" "}
+          <span className="whitespace-nowrap">I'd love to connect!</span>
         </p>
 
         {/* Decorative line under text */}
